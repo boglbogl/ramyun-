@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menú Ramyun Interactivo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div class="brandText">
+          <h1>Menú Ramyun Interactivo</h1>
+          <p>Toque un ramyun → detalles</p>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <!-- Picante -->
+        <div class="chips" aria-label="Filtro de picante">
+          <button class="chip" id="fAll" type="button" aria-pressed="true">Todos</button>
+          <button class="chip" id="fHot" type="button" aria-pressed="false">Picante 🌶️</button>
+          <button class="chip" id="fNoHot" type="button" aria-pressed="false">Sin picante 🥛</button>
+        </div>
+
+        <!-- Tipo -->
+        <div class="chips" aria-label="Filtro por tipo">
+          <button class="chip" id="tAll" type="button" aria-pressed="true">Todos tipos</button>
+          <button class="chip" id="tCaldo" type="button" aria-pressed="false">Caldo</button>
+          <button class="chip" id="tSeco" type="button" aria-pressed="false">Seco</button>
+        </div>
+
+        <div class="search">
+          <span class="icon">🔎</span>
+          <input id="search" type="search" placeholder="Buscar (buldak, chapagetti, shin…)" autocomplete="off" />
+        </div>
+
+
+
+        <button class="btn" id="shuffle" type="button">↻ Reordenar</button>
+
+        <div class="status" title="Estado de conexión">
+          <span class="dot" id="netDot"></span>
+          <span id="netText">Online</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="layout">
+      <aside class="listPanel" aria-label="Lista de ramyunes">
+        <div class="listHeader">
+          <h2>Ramyunes</h2>
+          <div class="hint">Toca uno para ver detalles</div>
+        </div>
+        <div class="list" id="list"></div>
+      </aside>
+
+      <!-- (PC) Panel detalle fijo -->
+      <section class="detailPanel" aria-label="Detalle (PC)">
+        <div class="detailCard">
+          <div class="emptyState" id="emptyStateDesk">
+            <div class="emptyIcon">🍜</div>
+            <h3>Selecciona un ramyun</h3>
+            <p>En PC verás el detalle aquí. En teléfono aparece una hoja desde abajo.</p>
+          </div>
+
+          <div class="detailContent hidden" id="detailContentDesk">
+            <div class="detailTop">
+              <div class="detailImage" id="detailImageDesk"></div>
+
+              <div class="detailMeta">
+                <div class="detailTitleRow">
+                  <div class="titleStack">
+                    <h2 id="dNameDesk">—</h2>
+                    <div class="flags" id="dFlagsDesk"></div>
+                  </div>
+                  <div class="price" id="dPriceDesk">—</div>
+                </div>
+
+                <div class="badges">
+                  <span class="badge"><span class="bdot" id="dHeatDotDesk"></span><span id="dHeatDesk">Picor: —</span></span>
+                  <span class="badge"><span class="bdot"></span><span id="dTypeDesk">Tipo: —</span></span>
+                  <span class="badge"><span class="bdot"></span><span id="dTimeDesk">Tiempo: —</span></span>
+                </div>
+
+                <p class="desc" id="dDescDesk">—</p>
+              </div>
+            </div>
+
+            <div class="grid">
+              <div class="card">
+                <h3>Ingredientes</h3>
+                <ul id="dIngredientsDesk"></ul>
+              </div>
+
+              <div class="card">
+                <h3>Alérgenos</h3>
+                <div class="tags" id="dAllergensDesk">
+                  <div id="dAllergensDesk"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+    </main>
+  </div>
+
+  <!-- ===== Bottom Sheet (Teléfono) ===== -->
+  <div class="sheetOverlay" id="sheetOverlay" aria-hidden="true"></div>
+
+  <section class="sheet" id="sheet" role="dialog" aria-modal="true" aria-label="Detalle de ramyun">
+    <div class="sheetHandle"></div>
+
+    <div class="sheetHeader">
+      <div class="sheetTitle">
+        <div class="titleStack">
+          <h2 id="sName">—</h2>
+          <div class="flags" id="sFlags"></div>
+        </div>
+        <div class="price" id="sPrice">—</div>
+      </div>
+     <button class="btn ghost" id="sheetClose" type="button" aria-label="Cerrar detalle">x</button>
+
+    </div>
+
+    <div class="sheetTop">
+      <div class="detailImage sheetImg" id="sImage"></div>
+      <div class="sheetMeta">
+        <div class="badges">
+          <span class="badge"><span class="bdot" id="sHeatDot"></span><span id="sHeat">Picor: —</span></span>
+          <span class="badge"><span class="bdot"></span><span id="sType">Tipo: —</span></span>
+          <span class="badge"><span class="bdot"></span><span id="sTime">Tiempo: —</span></span>
+        </div>
+        <p class="desc" id="sDesc">—</p>
+      </div>
+    </div>
+
+    <div class="sheetBody">
+      <div class="card">
+        <h3>Ingredientes</h3>
+        <ul id="sIngredients"></ul>
+      </div>
+
+      <div class="card">
+        <h3>Alérgenos</h3>
+        <div class="tags" id="sAllergens"></div>
+      </div>
+    </div>
+  </section>
+
+ <script defer src="./app.js"></script>
+
+</body>
+</html>
