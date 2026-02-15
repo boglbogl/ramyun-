@@ -5,7 +5,7 @@ const RAMYUNS = [
     name:"Sarigontang", 
     type:"Caldo", 
     heat:0, 
-    time:"4–5 min", 
+    time:"3–4 min", 
     price:3990, 
     image:"saringomtang.jpg",
     ingredients:["Fideos de harina de trigo y almidón de patata","Base de caldo de res concentrada","Ajo","Cebolla","Pimiento"],
@@ -21,7 +21,7 @@ const RAMYUNS = [
     name:"Chapaguetti", 
     type:"Seco", 
     heat:0, 
-    time:"5–6 min", 
+    time:"3–4 min", 
     price:3990, 
     image:"chapaguetti.jpg",
     ingredients:["Fideos","Sopa en polvo (pasta de soja, caramelo, azúcar)","proteina de soja","Aceite de oliva sazonado","porotos","Verduras deshidratadas (soja, col, patata, cebolla, zanahoria)"],
@@ -511,3 +511,4 @@ function init(){
 }
 
 init();
+
