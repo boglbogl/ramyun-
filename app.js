@@ -172,7 +172,29 @@ const RAMYUNS = [
     allergens:["Trigo (gluten)","Soja","Sésamo","Cacahuete","Crustáceos"],
     desc:"Versión picante del jjajang seco: espeso y sabroso.",
     bestSeller:false
-  }
+  },
+  {
+  id:"ottogi-sesame",
+  name:"sesame otoggi",
+  type:"Caldo",
+  heat:1,
+  time:"3-4 min",
+  price:3990,
+  image:"nuevo.jpg",
+  ingredients:[
+    "aceite de sesamo",
+    "semillas de sesamo tostadas",
+    "huevo en bloque"
+  ],
+  allergens:[
+    "soja",
+    "sesamo",
+    "huevo y trazas de pescado"
+  ],
+  desc:"El Ottogi Sesame Ramen (Chamke Ramen) es un ramen instantáneo coreano caracterizado por su caldo de sésamo tostado, sabor suave pero picante, y un característico bloque de huevo deshidratado",
+  bestSeller:false
+},
+
 ];
 
 // ===== Utils =====
@@ -511,6 +533,7 @@ function init(){
 }
 
 init();
+
 
 
 
