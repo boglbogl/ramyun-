@@ -144,7 +144,7 @@ const RAMYUNS = [
      time:"4–5 min", 
      price:3990, 
      image:"download (2).jpeg",
-    ingredients:["Harina de trigo","Aceite de palma","Salsa de soja","Chile en polvo","Ajo y cebolla"],
+    ingredients:["Harina de trigo","Aceite de palma","Salsa de soja","Chile en polvo","Ajo y cebolla","salsa a base de pollo"],
     allergens:["Trigo (gluten)","Soja"],
     desc:"Buldak clásico fuerte. Picante alto y sabor potente.",
     bestSeller:true
@@ -511,4 +511,5 @@ function init(){
 }
 
 init();
+
 
