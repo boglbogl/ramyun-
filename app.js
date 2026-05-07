@@ -197,7 +197,7 @@ const RAMYUNS = [
 
 ];
 
- { id:"Shrimp Ramyun", 
+ { id:"Shrimp-Ramyun", 
     name:"Shrimp Ramyun", 
     type:"caldo", 
     heat:2, 
@@ -209,6 +209,7 @@ const RAMYUNS = [
     desc:"Versión picante del jjajang seco: espeso y sabroso.",
     bestSeller:false
   },
+];
 // ===== Utils =====
 const $ = (sel) => document.querySelector(sel);
 function formatCLP(v){ return typeof v==="number" ? v.toLocaleString("es-CL",{style:"currency",currency:"CLP",maximumFractionDigits:0}) : "—"; }
