@@ -197,19 +197,7 @@ const RAMYUNS = [
 
 ];
 
- { id:"Shrimp-Ramyun", 
-    name:"Shrimp Ramyun", 
-    type:"caldo", 
-    heat:2, 
-    time:"5–6 min", 
-    price:3990, 
-    image:"descarga (4).jpg",
-    ingredients:["Fideos espesos de trigo","Salsa de soja negra","Aceite de oliva","Toque picante","Vegetales deshidratados"],
-    allergens:["Trigo (gluten)","Soja","Sésamo","Cacahuete","Crustáceos"],
-    desc:"Versión picante del jjajang seco: espeso y sabroso.",
-    bestSeller:false
-  },
-];
+ 
 // ===== Utils =====
 const $ = (sel) => document.querySelector(sel);
 function formatCLP(v){ return typeof v==="number" ? v.toLocaleString("es-CL",{style:"currency",currency:"CLP",maximumFractionDigits:0}) : "—"; }
