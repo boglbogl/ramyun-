@@ -194,6 +194,29 @@ const RAMYUNS = [
   desc:"El Ottogi Sesame Ramen (Chamke Ramen) es un ramen instantáneo coreano caracterizado por su caldo de sésamo tostado, sabor suave pero picante, y un característico bloque de huevo deshidratado",
   bestSeller:false
 },
+  {
+  id:"saeutang",
+  name:"Saeutang",
+  type:"Caldo",
+  heat:1,
+  time:"4–5 min",
+  price:3990,
+  image:"saeutang.jpg",
+  ingredients:[
+    "Fideos de trigo",
+    "Caldo sabor camarón",
+    "Ajo",
+    "Cebolla",
+    "Mariscos deshidratados"
+  ],
+  allergens:[
+    "Trigo (gluten)",
+    "Soja",
+    "Crustáceos"
+  ],
+  desc:"Caldo suave sabor camarón, clásico coreano.",
+  bestSeller:false
+}
 
 ];
 
