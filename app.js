@@ -217,6 +217,28 @@ const RAMYUNS = [
   desc:"Caldo suave sabor camarón, clásico coreano.",
   bestSeller:false
 },
+  {
+  id:"yukgaejang",
+  name:"Yukgaejang",
+  type:"Caldo",
+  heat:3,
+  time:"4-5 min",
+  price:3990,
+  image:"yukgaejang.jpg",
+  ingredients:[
+    "Fideos de trigo",
+    "Caldo picante de res",
+    "Cebollín",
+    "Ajo",
+    "Verduras deshidratadas"
+  ],
+  allergens:[
+    "Trigo (gluten)",
+    "Soja"
+  ],
+  desc:"Ramyun coreano picante estilo sopa Yukgaejang.",
+  bestSeller:false
+},
  
   
 
