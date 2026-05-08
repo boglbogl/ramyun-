@@ -216,7 +216,7 @@ const RAMYUNS = [
   ],
   desc:"Caldo suave sabor camarón, clásico coreano.",
   bestSeller:false
-}
+},
  
   
 
