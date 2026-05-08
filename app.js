@@ -219,7 +219,7 @@ const RAMYUNS = [
 },
   {
   id:"yukgaejang",
-  name:"Yukgaejang",
+  name:" Ramyun Yukgaejang",
   type:"Caldo",
   heat:3,
   time:"4-5 min",
