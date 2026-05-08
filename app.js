@@ -217,6 +217,20 @@ const RAMYUNS = [
   desc:"Caldo suave sabor camarón, clásico coreano.",
   bestSeller:false
 }
+  id:"yukgaejang",
+  name:"Saeutang",
+  type:"Caldo",
+  heat:2,
+  time:"4–5 min",
+  price:3990,
+  image:"yukgaejang.jpg",
+  ingredients:[
+    "caldo intenso de res",
+    "picante chile coreano",
+    "Ajo",
+    "Cebollin",
+    "setas shiitake"
+  
 
 ];
 
