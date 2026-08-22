@@ -1,5 +1,4 @@
-// ======= Datos (14) =======
-// bestSeller: true => etiqueta "Más vendido" y se ordena primero
+// premium: true => etiqueta "Premium" y se ordena primero
 const RAMYUNS = [
   { id:"sarigontang", 
     name:"Sarigontang", 
@@ -11,7 +10,7 @@ const RAMYUNS = [
     ingredients:["Fideos de harina de trigo y almidón de patata","Base de caldo de res concentrada","Ajo","Cebolla","Pimiento"],
     allergens:["Trigo (gluten)","Soja","Trazas de lácteos o huevo"],
     desc:"Caldo suave con base de res y aromáticos.",
-    bestSeller:false,
+    premium:false,
     
 
     
@@ -27,7 +26,7 @@ const RAMYUNS = [
     ingredients:["Fideos","Sopa en polvo (pasta de soja, caramelo, azúcar)","proteina de soja","Aceite de oliva sazonado","porotos","Verduras deshidratadas (soja, col, patata, cebolla, zanahoria)"],
     allergens:["Gluten (trigo)","Soja","Cacahuetes","Sésamo","Mostaza","Mariscos (gambas)","Huevo","Lactosa"],
     desc:"Jjajang estilo seco, sabor intenso y dulce-salado.",
-    bestSeller:true
+    premium:false
   },
   { id:"jin-jjajang",
      name:"Jin Jjajang", 
@@ -39,7 +38,7 @@ const RAMYUNS = [
     ingredients:["Harina de trigo","Aceite de palma","Pasta de soja negra fermentada","Caramelo","Verduras deshidratadas (repollo, cebolla, guisantes)","carne de res en polvo","Azúcar, sal y potenciadores"],
     allergens:["Soja","Trigo (gluten)","Lácteos","Huevos","Cacahuetes","Pescado","Apio","Mostaza","Moluscos","Crustáceos","Sésamo"],
     desc:"Salsa negra fermentada con verduras. Cero picante.",
-    bestSeller:false
+    premium:false
   },
   { id:"jin-chicken", 
     name:"Jin Ramen Chickens",
@@ -51,19 +50,19 @@ const RAMYUNS = [
     ingredients:["Harina de trigo","Aceite de palma","Sal","Saborizante artificial de pollo","Soja","Vegetales deshidratados (zanahoria, cebollino)"],
     allergens:["Trigo (gluten)","Soja","Sésamo","Trazas: lácteos, huevo, cacahuetes, pescado, crustáceos y moluscos"],
     desc:"Caldo suave con perfil a pollo.",
-    bestSeller:false
+    premium:false
   },
   { id:"real-otoggui", 
     name:"Real Otoggui", 
     type:"Caldo",
      heat:0, 
      time:"4–5 min", 
-     price:3990, 
+     price:4990, 
      image:"queso.jpg",
     ingredients:["Fideos de harina de trigo","Sopa en polvo (sal, soja, ajo, pollo, pimiento rojo)","Polvo de queso cheddar/crema","Salsa de queso real","Mezcla de brócoli, zanahoria, repollo y pastel de pescado"],
     allergens:["Trigo (gluten)","Leche","Soja","Sésamo","Trazas: crustáceos, huevo, pescado, moluscos, mostaza y frutos secos"],
     desc:"Caldo con queso, más cremoso y suave.",
-    bestSeller:false
+    premium:true
   },
   { id:"jin-ramen", 
     name:"Jin Ramen", 
@@ -75,7 +74,7 @@ const RAMYUNS = [
     ingredients:["Fideos de trigo (61%)","Caldo con especias (guindilla, ajo, cebolla, jengibre)","Proteínas vegetales (soja y trigo)","Verduras deshidratadas (zanahoria, shiitake, col china)"],
     allergens:["Trigo (gluten)","Soja","Trazas: lácteos, huevo, pescado, cacahuetes, apio, mostaza, moluscos, crustáceos y sésamo"],
     desc:"Caldo picante equilibrado, clásico para quienes quieren sabor fuerte.",
-    bestSeller:false
+    premium:false
   },
   { id:"jin-mild", 
     name:"Jin Mild", 
@@ -87,7 +86,7 @@ const RAMYUNS = [
     ingredients:["Harina de trigo","Almidón de patata","Aceite de palma","Salsa de soja","Ajo","Shiitake","Col","Extracto de hueso","Zanahoria","Algas"],
     allergens:["Trigo (gluten)","Soja","Trazas: lácteos, huevo, pescado, crustáceos, sésamo y apio"],
     desc:"Suave con un toque mínimo de picor.",
-    bestSeller:false
+    premium:false
   },
   { id:"shin-ramyun",
      name:"Shin Ramyun",
@@ -99,55 +98,55 @@ const RAMYUNS = [
     ingredients:["Fideos de trigo","Almidón de patata","Aceite de palma","carne de res","Condimentos (ajo, guindilla, pimienta)","Deshidratados (shiitake, zanahoria, pak-choi)"],
     allergens:["Trigo (gluten)","Soja","Frecuente: pescado/crustáceos/moluscos","Trazas: huevo, leche, cacahuetes, apio, sésamo y mostaza"],
     desc:"Picante fuerte en caldo, sabor profundo y muy popular.",
-    bestSeller:true
+    premium:false
   },
   { id:"buldak-rose", 
     name:"Buldak Rosé", 
     type:"Seco",
      heat:3, 
      time:"4–5 min",
-      price:3990, 
+      price:4990, 
       image:"buldak rose.jpg",
     ingredients:["Harina de trigo","Salsa de pollo picante","Crema","Queso","Toques tipo tocino","Pimentón y ajo"],
     allergens:["Gluten (trigo)","Soja","Leche"],
     desc:"Cremoso y picante medio, más suave que el original.",
-    bestSeller:true
+    premium:true
   },
   { id:"buldak-carbonara",
      name:"Buldak Carbonara", 
      type:"Seco", 
      heat:3, 
      time:"4–5 min",
-      price:3990, 
+      price:4990, 
       image:"buldak carbonara.jpg",
     ingredients:["Fideos de trigo","Salsa picante de pollo","Polvo cremoso","Quesos (según versión)"],
     allergens:["Trigo (gluten)","Soja","Leche"],
     desc:"Picante medio con perfil queso/cremoso.",
-    bestSeller:true
+    premium:true
   },
   { id:"buldak-4-quesos", 
     name:"Buldak 4 Quesos",
      type:"Seco",
       heat:3, 
       time:"4–5 min", 
-      price:3990, 
+      price:4990, 
       image:"buldak queso.jpg",
     ingredients:["Fideos de trigo","Salsa picante sabor pollo","Queso en polvo (mozzarella, cheddar, gouda, camembert)"],
     allergens:["Gluten (trigo)","Soja","Leche","Trazas: huevo, nueces, crustáceos y pescado"],
     desc:"Más cremoso y menos agresivo; muy quesoso.",
-    bestSeller:false
+    premium:true
   },
   { id:"buldak-negro", 
     name:"Buldak Negro",
      type:"Seco", 
      heat:4, 
      time:"4–5 min", 
-     price:3990, 
+     price:4990, 
      image:"download (2).jpeg",
     ingredients:["Harina de trigo","Aceite de palma","Salsa de soja","Chile en polvo y salsa de pollo","Ajo y cebolla"],
     allergens:["Trigo (gluten)","Soja"],
     desc:"Buldak clásico fuerte. Picante alto y sabor potente.",
-    bestSeller:true
+    premium:true
   },
   { id:"jin-veggie", 
     name:"Jin Veggui",
@@ -159,7 +158,7 @@ const RAMYUNS = [
     ingredients:["Fideos","Caldo vegano con mezcla de 10 vegetales (repollo, bok choy, zanahoria, etc.)"],
     allergens:["Trigo (gluten)","Soja"],
     desc:"100% vegano, caldo suave y sabroso.",
-    bestSeller:false
+    premium:false
   },
   { id:"chapagetti-picante", 
     name:"Chapagetti Picante", 
@@ -171,7 +170,7 @@ const RAMYUNS = [
     ingredients:["Fideos espesos de trigo","Salsa de soja negra","Aceite de oliva","Toque picante","Vegetales deshidratados"],
     allergens:["Trigo (gluten)","Soja","Sésamo","Cacahuete","Crustáceos"],
     desc:"Versión picante del jjajang seco: espeso y sabroso.",
-    bestSeller:false
+    premium:false
   },
   {
   id:"ottogi-sesame",
@@ -192,7 +191,7 @@ const RAMYUNS = [
     "huevo y trazas de pescado"
   ],
   desc:"El Ottogi Sesame Ramen (Chamke Ramen) es un ramen instantáneo coreano caracterizado por su caldo de sésamo tostado, sabor suave pero picante, y un característico bloque de huevo deshidratado",
-  bestSeller:false
+  premium:false
 },
   {
   id:"saeutang",
@@ -215,7 +214,7 @@ const RAMYUNS = [
     "Crustáceos"
   ],
   desc:"Caldo suave sabor camarón, clásico coreano.",
-  bestSeller:false
+  premium:false
 },
   {
   id:"yukgaejang",
@@ -237,7 +236,7 @@ const RAMYUNS = [
     "Soja"
   ],
   desc:"Ramyun coreano picante estilo sopa Yukgaejang.",
-  bestSeller:false
+  premium:false
 },
  
   
@@ -253,6 +252,7 @@ function heatColor(h){ if(h>=4) return "rgba(248,113,113,.95)"; if(h>=2) return 
 let selectedId = null;
 let filterHeat = "all";  // all | hot | nohot
 let filterType = "all";  // all | caldo | seco
+let filterPremium = false;
 let items = [...RAMYUNS];
 
 // DOM list/search
@@ -260,9 +260,10 @@ const listEl = $("#list");
 const searchEl = $("#search");
 
 // chips heat
-const fAll = $("#fAll"), fHot = $("#fHot"), fNoHot = $("#fNoHot");
+const fAll = $("#fAll"), fHot = $("#fHot"), fNoHot = $("#fNoHot"), fPremium = $("#fPremium");
 // chips type
-const tAll = $("#tAll"), tCaldo = $("#tCaldo"), tSeco = $("#tSeco");
+const tCaldo = $("#tCaldo");
+const tSeco = $("#tSeco");
 
 // Net status
 function updateNetStatus(){
@@ -330,9 +331,18 @@ function setHeat(mode){
 }
 function setType(mode){
   filterType = mode;
-  tAll.setAttribute("aria-pressed", mode==="all");
-  tCaldo.setAttribute("aria-pressed", mode==="caldo");
-  tSeco.setAttribute("aria-pressed", mode==="seco");
+
+  tCaldo.setAttribute("aria-pressed", mode === "caldo");
+  tSeco.setAttribute("aria-pressed", mode === "seco");
+
+  applyFilters();
+}
+
+function setPremium(){
+  filterPremium = !filterPremium;
+  if (fPremium){
+    fPremium.setAttribute("aria-pressed", filterPremium ? "true" : "false");
+  }
   applyFilters();
 }
 
@@ -352,6 +362,8 @@ function applyFilters(){
       (r.type.toLowerCase() === "seco");
     if (!typeOk) return false;
 
+    if (filterPremium && !r.premium) return false;
+
     if (!term) return true;
 
     const hay = [
@@ -364,8 +376,8 @@ function applyFilters(){
     return hay.includes(term);
   });
 
-  // ✅ Más vendidos primero (siempre)
-  items.sort((a,b) => (b.bestSeller === true) - (a.bestSeller === true) || a.name.localeCompare(b.name));
+  // ✅ Premium primero (siempre)
+  items.sort((a,b) => (b.premium === true) - (a.premium === true) || a.name.localeCompare(b.name));
 
   renderList();
 
@@ -421,7 +433,7 @@ function renderList(){
       <span class="pill">🌶️ ${r.heat}/5</span>
       <span class="pill">${r.type}</span>
       <span class="pill">💳 ${formatCLP(r.price)}</span>
-      ${r.bestSeller ? `<span class="pill">⭐ Más vendido</span>` : ``}
+      ${r.premium ? `<span class="pill">⭐ Premium</span>` : ``}
     `;
 
     info.appendChild(name);
@@ -454,10 +466,10 @@ function showEmptyDesk(){
 
 function renderFlags(container, r){
   container.innerHTML = "";
-  if (r.bestSeller){
+  if (r.premium){
     const f = document.createElement("span");
     f.className = "flag best";
-    f.textContent = "⭐ Más vendido";
+    f.textContent = "⭐ Premium";
     container.appendChild(f);
   }
   // opcional: destacar MUY picante
@@ -544,7 +556,7 @@ function select(id){
 }
 
 function shuffle(){
-  // reordenar la lista actual (manteniendo bestSeller arriba al volver a filtrar)
+  // reordenar la lista actual
   const arr = [...items];
   for (let i = arr.length - 1; i > 0; i--){
     const j = Math.floor(Math.random() * (i + 1));
@@ -555,19 +567,62 @@ function shuffle(){
 }
 
 function init(){
-  // inicial: ordenar más vendidos arriba
-  items.sort((a,b) => (b.bestSeller === true) - (a.bestSeller === true) || a.name.localeCompare(b.name));
+  // inicial: ordenar premium arriba
+  items.sort((a,b) => (b.premium === true) - (a.premium === true) || a.name.localeCompare(b.name));
   renderList();
   showEmptyDesk();
 
   $("#shuffle").addEventListener("click", shuffle);
   searchEl.addEventListener("input", applyFilters);
 
-  fAll.addEventListener("click", () => setHeat("all"));
-  fHot.addEventListener("click", () => setHeat("hot"));
-  fNoHot.addEventListener("click", () => setHeat("nohot"));
+fAll.addEventListener("click", () => {
 
-  tAll.addEventListener("click", () => setType("all"));
+  // Reiniciar TODOS los filtros
+  filterHeat = "all";
+  filterType = "all";
+  filterPremium = false;
+
+  // Botones superiores
+  fAll.setAttribute("aria-pressed", "true");
+  fHot.setAttribute("aria-pressed", "false");
+  fNoHot.setAttribute("aria-pressed", "false");
+
+  if (fPremium) {
+    fPremium.setAttribute("aria-pressed", "false");
+  }
+
+  // Tipo
+  tCaldo.setAttribute("aria-pressed", "false");
+  tSeco.setAttribute("aria-pressed", "false");
+
+  applyFilters();
+});
+
+fHot.addEventListener("click", () => {
+  filterPremium = false;
+
+  if (fPremium) {
+    fPremium.setAttribute("aria-pressed", "false");
+  }
+
+  setHeat("hot");
+});
+
+fNoHot.addEventListener("click", () => {
+  filterPremium = false;
+
+  if (fPremium) {
+    fPremium.setAttribute("aria-pressed", "false");
+  }
+
+  setHeat("nohot");
+});
+
+if (fPremium) {
+  fPremium.addEventListener("click", setPremium);
+}
+
+  
   tCaldo.addEventListener("click", () => setType("caldo"));
   tSeco.addEventListener("click", () => setType("seco"));
 
@@ -581,6 +636,11 @@ function init(){
 }
 
 init();
+
+
+
+
+
 
 
 
